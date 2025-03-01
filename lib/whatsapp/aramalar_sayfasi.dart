@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ornekler/whatsapp/renkler.dart';
+import 'package:whatsapp/whatsapp/renkler.dart';
+
 
 class AramalarSayfasi extends StatefulWidget {
   const AramalarSayfasi({super.key});
@@ -155,8 +156,8 @@ class _AramalarSayfasiState extends State<AramalarSayfasi> {
       body: SingleChildScrollView(
         child: Column(crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-             Padding(
-               padding: const EdgeInsets.only(top: 8.0,left: 16.0),
+             const Padding(
+               padding: EdgeInsets.only(top: 8.0,left: 16.0),
                child: Text("Favoriler",style: TextStyle(color: Colors.white,fontSize: 16),),
              ),
             InkWell(
@@ -167,16 +168,16 @@ class _AramalarSayfasiState extends State<AramalarSayfasi> {
               child: Row(children: [
                 Padding(
                   padding: const EdgeInsets.only(left: 16.0),
-                  child: Container(width: 50,height:40,decoration: BoxDecoration(color: butonRenk,shape: BoxShape.circle),child: Icon(Icons.favorite,color: Colors.black,)),
+                  child: Container(width: 50,height:40,decoration: BoxDecoration(color: butonRenk,shape: BoxShape.circle),child: const Icon(Icons.favorite,color: Colors.black,)),
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 16.0),
+                const Padding(
+                  padding: EdgeInsets.only(left: 16.0),
                   child: Text("Favori Ekle",style: TextStyle(color: Colors.white,fontSize: 16),),
                 )
               ],),),
             ),
-            Padding(
-              padding: const EdgeInsets.only(top: 8.0,left: 16.0),
+            const Padding(
+              padding: EdgeInsets.only(top: 8.0,left: 16.0),
               child: Text("En Son",style: TextStyle(color: Colors.white,fontSize: 16),),
             ),
             ListView.builder(
@@ -198,8 +199,8 @@ class _AramalarSayfasiState extends State<AramalarSayfasi> {
                               Row(
                                 children: [
                                   Icon(cevap[username],color: cevapRenk[username],size: 16,),
-                                  SizedBox(width: 5,),
-                                  Text(saat[username]!,style:  TextStyle(fontSize: 14,color: Colors.grey,fontWeight: FontWeight.bold),),
+                                  const SizedBox(width: 5,),
+                                  Text(saat[username]!,style:  const TextStyle(fontSize: 14,color: Colors.grey,fontWeight: FontWeight.bold),),
                                 ],
                               ),
                           ],),
@@ -217,7 +218,7 @@ class _AramalarSayfasiState extends State<AramalarSayfasi> {
         ),
       ),
       floatingActionButton: Container(width: 55,height: 55,decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),color: butonRenk,),
-      child:IconButton(onPressed: (){}, icon: Icon(Icons.add_ic_call_sharp,color: Colors.black,)),
+      child:IconButton(onPressed: (){}, icon: const Icon(Icons.add_ic_call_sharp,color: Colors.black,)),
       ),
     );
   }

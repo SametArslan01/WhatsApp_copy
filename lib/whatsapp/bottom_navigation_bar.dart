@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ornekler/whatsapp/renkler.dart';
-import 'package:ornekler/whatsapp/topluluklar_safyasi.dart';
-import 'package:ornekler/whatsapp/whattsapp_anasayfa.dart';
+import 'package:whatsapp/whatsapp/renkler.dart';
+import 'package:whatsapp/whatsapp/topluluklar_safyasi.dart';
+import 'package:whatsapp/whatsapp/whattsapp_anasayfa.dart';
 import 'aramalar_sayfasi.dart';
 import 'guncellemeler_sayfasi.dart';
 

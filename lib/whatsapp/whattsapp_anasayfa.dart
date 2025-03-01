@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ornekler/whatsapp/renkler.dart';
+import 'package:whatsapp/whatsapp/renkler.dart';
 
 
 class WhattsappAnasayfa extends StatefulWidget {
